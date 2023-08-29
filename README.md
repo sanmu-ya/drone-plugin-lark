@@ -2,7 +2,8 @@
 
 ## drone-plugin-lark
 [![Docker Pulls](https://img.shields.io/docker/pulls/sanmuya/drone-plugin-lark)]()
-[![GitHub release](https://img.shields.io/github/release/sanmuya/drone-plugin-lark)]()
+[![GitHub license](https://img.shields.io/github/license/sanmu-ya/drone-plugin-lark)]()
+[![Docker Image-size](https://img.shields.io/docker/image-size/sanmuya/drone-plugin-lark/latest)]()
 
 drone Lark - Custom group chat robot message push plugin.
 
