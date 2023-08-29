@@ -3,7 +3,7 @@ date: 2023-08-30T00:00:00+08:00
 title: Lark
 author: sanmuya
 tags: [ lark, feishu, Bot, Chat]
-repo: sanmuya/drone-plugin-lark
+repo: sanmu-ya/drone-plugin-lark
 logo: Lark.png
 image: sanmuya/drone-plugin-lark
 ---
