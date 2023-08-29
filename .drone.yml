@@ -1,0 +1,32 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+#  - name: build image
+#    pull: if-not-exists
+#    image: plugins/docker
+#    settings:
+#      username:
+#        from_secret: docker_username
+#      password:
+#        from_secret: docker_password
+#      dockerfile: Dockerfile
+#      repo: sanmuya/drone-plugin-lark
+#      tags:
+#        - latest
+#        - ${DRONE_BUILD_NUMBER}
+
+  - name: lark
+    image: sanmuya/drone-plugin-lark:latest
+#    pull: always
+    settings:
+      webhook: https://open.feishu.cn/open-apis/bot/v2/hook/f1ac0a3e-4555-420f-99a9-338cf39600f2
+      secret:
+        from_secret: lark-secret
+      message:
+        - ========== drone message ==========
+        - REPO: ${DRONE_REPO}
+        - AUTHOR: ${DRONE_COMMIT_AUTHOR_NAME}
+        - COMMIT_BRANCH: ${DRONE_COMMIT_BRANCH}
+        - COMMIT_MESSAGE: ${DRONE_COMMIT_MESSAGE}
